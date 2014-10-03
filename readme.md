@@ -1,25 +1,36 @@
-## Laravel PHP Framework
+# Project: CSCI E-15 P3
+**Philip Regan**
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+# Live URL
+[http://p3.regan15.pw](http://p3.regan15.pw)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
+# Description
+<!-- 2-3+ sentences -->
 
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
+# Demo information
+<!-- If you attend your section to do an in-person demo, make a note of this. If you opt to do the Jing screencast demo, include the link here .-->
+I will do an in-person demo
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+# Test Requirements and Details
+<!-- Any details the instructor or TA needs to know, for example, test credentials. -->
+Extra Features include:
+*
 
-## Official Documentation
+# Dependencies and Citations
+<!--A list of any plugins, libraries, packages or outside code used in the project. See Student Responsibilities for more details on avoiding code plagiarism.-->
+* PHP created and edited with [PHPStorm](http://www.jetbrains.com/phpstorm/).
+* HTML and CSS created and edited with [BBEdit](http://www.barebones.com/products/bbedit/)
 
-Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
+# Project Notes
 
-### Contributing To Laravel
+## Roadmap
 
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
 
-### License
+## Bugs
+None known
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+# Change History
+
+* 14\_09\_24\_01\_00\_000: Started source
+
+cd /Applications/MAMP/htdocs/CSCI15P3; git add --all; git commit -m ""; git push github master
