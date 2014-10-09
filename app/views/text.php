@@ -37,8 +37,8 @@
             <ul class="nav navbar-nav">
                 <li><a href="/">Home</a></li>
                 <li class="active"><a href="text">Text</a></li>
-                <li><a href="#contact">Users</a></li>
-                <li><a href="#contact">Passwords</a></li>
+                <li><a href="users">Users</a></li>
+                <li><a href="passwords">Passwords</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>

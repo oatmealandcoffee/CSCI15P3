@@ -58,6 +58,7 @@ Extra Features include:
 		* Form, use GET
 	* All pages
 		* Input validation
+	* Update design to be DRY (esp. NavBar)
 
 ## Bugs
 None known
@@ -67,5 +68,6 @@ None known
 * 14\_09\_24\_01\_00\_000: Started source
 * 14\_10\_09\_01\_00\_001: Updated roadmap
 * 14\_10\_09\_01\_01\_000: Added intro landing page
-* 14\_10\_09\_01\_01\_000: Added text generator landing page; Updated default layout to include menu bar
-cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Added text generator landing page; Updated default layout to include menu bar"; git push github master
+* 14\_10\_09\_01\_02\_000: Added text generator landing page; Updated default layout to include menu bar
+* 14\_10\_09\_01\_03\_000: Added users and password generator pages
+cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Added users and password generator pages"; git push github master

@@ -20,3 +20,12 @@ Route::get('/text', function()
 {
     return View::make('text');
 });
+
+Route::get('/users', function()
+{
+    return View::make('users');
+});
+Route::get('/passwords', function()
+{
+    return View::make('passwords');
+});

@@ -35,10 +35,10 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="text">Text</a></li>
                 <li><a href="users">Users</a></li>
-                <li><a href="passwords">Passwords</a></li>
+                <li class="active"><a href="passwords">Passwords</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -47,27 +47,14 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
     <div class="container">
-        <h1>Developer's Best Friend</h1>
-        <p>A set of tools to help developers work efficiently by not having to sweat the small stuff.</p>
+        <h1>Password Generator</h1>
+        <p>Complex, yet memorable, passwords to quickly lock down your site.</p>
     </div>
 </div>
 
 <div class="container">
-    <!-- Example row of columns -->
-    <div class="row">
-        <div class="col-md-4">
-            <h2><a href="text">Text Generator</a></h2>
-            <p>Dummy text to fill your page so you can focus on your style. </p>
-        </div>
-        <div class="col-md-4">
-            <h2><a href="users">User Generator</a></h2>
-            <p>Randomly generated user information to help populate and test user accounts.</p>
-        </div>
-        <div class="col-md-4">
-            <h2><a href="passwords">Password Generator</a></h2>
-            <p>Complex yet memorable passwords randomly generated.</p>
-        </div>
-    </div>
+
+    <h1>TODO</h1>
 
     <hr>
 
