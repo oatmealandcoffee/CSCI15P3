@@ -18,13 +18,46 @@ Extra Features include:
 
 # Dependencies and Citations
 <!--A list of any plugins, libraries, packages or outside code used in the project. See Student Responsibilities for more details on avoiding code plagiarism.-->
+* Based on the Laravel framework
 * PHP created and edited with [PHPStorm](http://www.jetbrains.com/phpstorm/).
 * HTML and CSS created and edited with [BBEdit](http://www.barebones.com/products/bbedit/)
 
 # Project Notes
 
+## URL Map
+* http://p3.regan15.pw
+	* landing page
+* http://p3.regan15.pw/lorem ; lorem ipsum generator
+	* GET
+* http://p3.regan15.pw/user ; random user generator
+	* GET 
+* http://p3.regan15.pw/password ; password generator
+	* GET 
+
 ## Roadmap
 
+	* Integrate Bootstrap into default page
+	* Landing page
+		* Create default path
+		* Create blade template
+		* Description
+		* Links
+	* Lorem Ipsum Generator
+		* Create default path
+        * Create blade template
+		* Form, use GET
+		* https://packagist.org/packages/badcow/lorem-ipsum
+	* Random User Generator
+		* Create default path
+        * Create blade template
+		* Form, use GET
+		* https://packagist.org/packages/fzaninotto/faker
+	* XKCD Password Generator
+		* Create default path
+        * Create blade template
+		* Form, use GET
+	* All pages
+		* Input validation
 
 ## Bugs
 None known
@@ -32,5 +65,6 @@ None known
 # Change History
 
 * 14\_09\_24\_01\_00\_000: Started source
-
-cd /Applications/MAMP/htdocs/CSCI15P3; git add --all; git commit -m ""; git push github master
+* 14\_09\_24\_01\_00\_001: Updated roadmap
+* 
+cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Updated roadmap"; git push github master
