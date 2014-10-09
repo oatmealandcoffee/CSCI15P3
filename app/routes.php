@@ -15,3 +15,8 @@ Route::get('/', function()
 {
 	return View::make('intro');
 });
+
+Route::get('/text', function()
+{
+    return View::make('text');
+});
