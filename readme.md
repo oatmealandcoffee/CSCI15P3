@@ -65,6 +65,6 @@ None known
 # Change History
 
 * 14\_09\_24\_01\_00\_000: Started source
-* 14\_09\_24\_01\_00\_001: Updated roadmap
-* 
-cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Updated roadmap"; git push github master
+* 14\_10\_09\_01\_00\_001: Updated roadmap
+* 14\_10\_09\_01\_01\_000: Added intro landing page
+cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Added intro landing page"; git push github master
