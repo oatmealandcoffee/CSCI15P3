@@ -32,14 +32,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Developer's Best Friend</a>
+            <a class="navbar-brand" href="/">Developer's Best Friend</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li @yield('home_nav_active')><a href="/">Home</a></li>
                 <li @yield('text_nav_active')><a href="text">Text</a></li>
                 <li @yield('users_nav_active')><a href="users">Users</a></li>
-                <li @yield('passwords_home_active')><a href="passwords">Passwords</a></li>
+                <li @yield('passwords_nav_active')><a href="passwords">Passwords</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>

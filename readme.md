@@ -36,29 +36,29 @@ Extra Features include:
 
 ## Roadmap
 
-	* Integrate Bootstrap into default page
-	* Landing page
-		* Create default path
-		* Create blade template
-		* Description
-		* Links
-	* Lorem Ipsum Generator
-		* Create default path
-        * Create blade template
+	X Integrate Bootstrap into default page
+	X Landing page
+		X Create default path
+		X Create blade template
+		X Description
+		X Links
+	> Lorem Ipsum Generator
+		X Create default path
+        X Create blade template
 		* Form, use GET
 		* https://packagist.org/packages/badcow/lorem-ipsum
-	* Random User Generator
-		* Create default path
-        * Create blade template
+	> Random User Generator
+		X Create default path
+        X Create blade template
 		* Form, use GET
 		* https://packagist.org/packages/fzaninotto/faker
-	* XKCD Password Generator
-		* Create default path
-        * Create blade template
+	> XKCD Password Generator
+		X Create default path
+        X Create blade template
 		* Form, use GET
 	* All pages
 		* Input validation
-	* Update design to be DRY (esp. NavBar)
+	X Update design to be DRY (esp. NavBar)
 
 ## Bugs
 None known
@@ -73,4 +73,5 @@ None known
 * 14\_10\_09\_01\_04\_000: Added _master.blade.php; Added intro.blade.php; Removed intro.php
 * 14\_10\_09\_01\_05\_000: Added text.blade.php; Removed text.php
 * 14\_10\_09\_01\_06\_000: Added users.blade.php; Removed users.php
-cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Added users.blade.php; Removed users.php"; git push github master
+* 14\_10\_09\_01\_07\_000: Added passwords.blade.php; Removed passwords.php; Updated navigation bar
+cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Added passwords.blade.php; Removed passwords.php; Updated navigation bar"; git push github master
