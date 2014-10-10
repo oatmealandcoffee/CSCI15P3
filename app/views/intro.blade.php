@@ -4,6 +4,10 @@
 Developer's Best Friend
 @stop
 
+@section('title_h1')
+Developer's Best Friend
+@stop
+
 @section('home_nav_active')
 class="active"
 @stop
