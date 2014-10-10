@@ -72,4 +72,5 @@ None known
 * 14\_10\_09\_01\_03\_000: Added users and password generator pages
 * 14\_10\_09\_01\_04\_000: Added _master.blade.php; Added intro.blade.php; Removed intro.php
 * 14\_10\_09\_01\_05\_000: Added text.blade.php; Removed text.php
-cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Added text.blade.php; Removed text.php"; git push github master
+* 14\_10\_09\_01\_06\_000: Added users.blade.php; Removed users.php
+cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Added users.blade.php; Removed users.php"; git push github master
