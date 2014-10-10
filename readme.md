@@ -59,9 +59,13 @@ Extra Features include:
 	* All pages
 		* Input validation
 	X Update design to be DRY (esp. NavBar)
+	* Packages to install
+		* "badcow/lorem-ipsum": "dev-master",
+    	* "nubs/random-name-generator": "dev-master",
+    	* "fzaninotto/company-name-generator": "dev-master"
 
 ## Bugs
-* [0107001] URIs are not resolving on the production server
+	X [0107001] URIs are not resolving on the production server
 
 # Change History
 
@@ -75,4 +79,5 @@ Extra Features include:
 * 14\_10\_09\_01\_06\_000: Added users.blade.php; Removed users.php
 * 14\_10\_09\_01\_07\_000: Added passwords.blade.php; Removed passwords.php; Updated navigation bar
 * 14\_10\_09\_01\_07\_001: Fixing URI bug [0107001]
-cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Fixing URI bug [0107001]"; git push github master
+* 14\_10\_09\_01\_08\_000: Added Pre; Added LoremIpsum
+cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Added Pre; Added LoremIpsum"; git push github master
