@@ -36,9 +36,9 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li @yield('text_nav_active')><a href="/text">Text</a></li>
-                <li @yield('users_nav_active')><a href="/users">Users</a></li>
-                <li @yield('passwords_nav_active')><a href="/passwords">Passwords</a></li>
+                <li @yield('text_nav_active')><a href="text">Text</a></li>
+                <li @yield('users_nav_active')><a href="users">Users</a></li>
+                <li @yield('passwords_nav_active')><a href="passwords">Passwords</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
