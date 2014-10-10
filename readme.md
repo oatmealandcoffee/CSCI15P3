@@ -27,11 +27,11 @@ Extra Features include:
 ## URL Map
 * http://p3.regan15.pw
 	* landing page
-* http://p3.regan15.pw/lorem ; lorem ipsum generator
+* http://p3.regan15.pw/text ; lorem ipsum generator
 	* GET
-* http://p3.regan15.pw/user ; random user generator
+* http://p3.regan15.pw/users ; random user generator
 	* GET 
-* http://p3.regan15.pw/password ; password generator
+* http://p3.regan15.pw/passwords ; password generator
 	* GET 
 
 ## Roadmap
@@ -61,7 +61,7 @@ Extra Features include:
 	X Update design to be DRY (esp. NavBar)
 
 ## Bugs
-None known
+* [0107001] URIs are not resolving on the production server
 
 # Change History
 
@@ -74,4 +74,5 @@ None known
 * 14\_10\_09\_01\_05\_000: Added text.blade.php; Removed text.php
 * 14\_10\_09\_01\_06\_000: Added users.blade.php; Removed users.php
 * 14\_10\_09\_01\_07\_000: Added passwords.blade.php; Removed passwords.php; Updated navigation bar
-cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Added passwords.blade.php; Removed passwords.php; Updated navigation bar"; git push github master
+* 14\_10\_09\_01\_07\_001: Fixing URI bug [0107001]
+cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Fixing URI bug [0107001]"; git push github master
