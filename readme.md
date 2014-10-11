@@ -46,6 +46,7 @@ Extra Features include:
 		X Create default path
         X Create blade template
 		* Form, use GET
+			* paragraph count 1-10
 		* https://packagist.org/packages/badcow/lorem-ipsum
 	> Random User Generator
 		X Create default path
@@ -80,4 +81,5 @@ Extra Features include:
 * 14\_10\_09\_01\_07\_000: Added passwords.blade.php; Removed passwords.php; Updated navigation bar
 * 14\_10\_09\_01\_07\_001: Fixing URI bug [0107001]
 * 14\_10\_09\_01\_08\_000: Added Pre; Added LoremIpsum
-cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Added Pre; Added LoremIpsum"; git push github master
+* 14\_10\_09\_01\_09\_000: Added LoremIpsum text generation to text page
+cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Added LoremIpsum text generation to text page"; git push github master
