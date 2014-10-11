@@ -1,5 +1,41 @@
 @extends('_master')
 
+@section('require')
+<?php
+
+/* Global Variables */
+
+$minUsers = 1;
+$maxUsers = 10;
+$defaultUsers = $minUsers;
+
+/* capture the form values */
+
+$usersCount = Input::get('user_count');
+$nameSelected = Input::get('name');
+$addressSelected = Input::get('address');
+$email = Input::get('email');
+$text = Input::get('text');
+
+if ( $usersCount ) {
+    if ( !is_numeric( $usersCount ) ) {
+        $usersCount = $minParagraphs;
+    }
+
+    if ( $usersCount < $minParagraphs ) {
+        $usersCount = $minParagraphs;
+    }
+
+    if ( $usersCount > $maxParagraphs ) {
+        $usersCount = $maxParagraphs;
+    }
+} else {
+    $usersCount = $defaultUsers;
+}
+
+?>
+@stop
+
 @section('title')
 Developer's Best Friend
 @stop

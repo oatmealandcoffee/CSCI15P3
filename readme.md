@@ -52,6 +52,10 @@ Extra Features include:
 		X Create default path
         X Create blade template
 		* Form, use GET
+			* $faker->name
+			* $faker->address
+			* $faker->email
+			* $faker->text
 		* https://packagist.org/packages/fzaninotto/faker
 	> XKCD Password Generator
 		X Create default path
@@ -83,4 +87,5 @@ Extra Features include:
 * 14\_10\_09\_01\_08\_000: Added Pre; Added LoremIpsum
 * 14\_10\_09\_01\_09\_000: Added LoremIpsum text generation to text page
 * 14\_10\_09\_01\_10\_000: Added Faker
-cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Added Faker"; git push github master
+* 14\_10\_09\_01\_10\_001: Updated text page to set a default paragraph count; added user form value capture and validation
+cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Updated text page to set a default paragraph count; added user form value capture and validation"; git push github master

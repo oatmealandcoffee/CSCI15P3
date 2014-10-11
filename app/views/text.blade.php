@@ -22,6 +22,8 @@ if ( $paragraphCount ) {
     if ( $paragraphCount > $maxParagraphs ) {
         $paragraphCount = $maxParagraphs;
     }
+} else {
+    $paragraphCount = $defaultParagraphs;
 }
 ?>
 @stop
