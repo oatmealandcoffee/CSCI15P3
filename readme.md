@@ -91,4 +91,5 @@ Extra Features include:
 * 14\_10\_09\_01\_10\_000: Added Faker
 * 14\_10\_09\_01\_10\_001: Updated text page to set a default paragraph count; added user form value capture and validation
 * 14\_11\_09\_01\_10\_002: Fixed bugs related to undefined variables; Added table form styles to _master.blade.php
-cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Fixed bugs related to undefined variables; Added table form styles to _master.blade.php"; git push github master
+* 14\_11\_09\_01\_10\_003: Added basic user generation
+cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Added basic user generation"; git push github master

@@ -92,5 +92,25 @@ Generate users to show off user interactions
     </form>
 </div>
 <div class="well">
+
+    <?php
+    $faker = Faker\Factory::create();
+    for ( $u = 0 ; $u < $usersCount ; $u++ ) {
+
+        $name = ( $nameSelected ? $faker->name() : '');
+        $address = ( $addressSelected ? $faker->address() : '');
+        $email = ( $emailSelected ? $faker->email() : '');
+        $text = ( $textSelected ? $faker->text() : '');
+
+        $userInfo = array( $name , $address, $email , $text );
+
+        $user = implode('<br>', $userInfo);
+
+        echo '<p>'.$user.'</p>';
+
+    }
+
+    ?>
+
 </div>
 @stop
