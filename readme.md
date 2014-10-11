@@ -42,12 +42,12 @@ Extra Features include:
 		X Create blade template
 		X Description
 		X Links
-	> Lorem Ipsum Generator
+	X Lorem Ipsum Generator
 		X Create default path
         X Create blade template
-		* Form, use GET
-			* paragraph count 1-10
-		* https://packagist.org/packages/badcow/lorem-ipsum
+		X Form, use GET
+			X paragraph count 1-10
+		X https://packagist.org/packages/badcow/lorem-ipsum
 	> Random User Generator
 		X Create default path
         X Create blade template
@@ -61,7 +61,7 @@ Extra Features include:
 		* Input validation
 	X Update design to be DRY (esp. NavBar)
 	* Packages to install
-		* "badcow/lorem-ipsum": "dev-master",
+		X "badcow/lorem-ipsum": "dev-master",
     	* "nubs/random-name-generator": "dev-master",
     	* "fzaninotto/company-name-generator": "dev-master"
 
@@ -82,4 +82,5 @@ Extra Features include:
 * 14\_10\_09\_01\_07\_001: Fixing URI bug [0107001]
 * 14\_10\_09\_01\_08\_000: Added Pre; Added LoremIpsum
 * 14\_10\_09\_01\_09\_000: Added LoremIpsum text generation to text page
-cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Added LoremIpsum text generation to text page"; git push github master
+* 14\_10\_09\_01\_10\_000: Added Faker
+cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Added Faker"; git push github master
