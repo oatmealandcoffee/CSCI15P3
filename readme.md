@@ -36,6 +36,8 @@ Extra Features include:
 
 ## Roadmap
 
+	* Tweaks
+		* Fix table layout for settings
 	X Integrate Bootstrap into default page
 	X Landing page
 		X Create default path
@@ -66,7 +68,7 @@ Extra Features include:
 	X Update design to be DRY (esp. NavBar)
 	* Packages to install
 		X "badcow/lorem-ipsum": "dev-master",
-    	* "nubs/random-name-generator": "dev-master",
+    	- "nubs/random-name-generator": "dev-master", // deprecated, using Faker instead
     	* "fzaninotto/company-name-generator": "dev-master"
 
 ## Bugs
@@ -88,4 +90,5 @@ Extra Features include:
 * 14\_10\_09\_01\_09\_000: Added LoremIpsum text generation to text page
 * 14\_10\_09\_01\_10\_000: Added Faker
 * 14\_10\_09\_01\_10\_001: Updated text page to set a default paragraph count; added user form value capture and validation
-cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Updated text page to set a default paragraph count; added user form value capture and validation"; git push github master
+* 14\_11\_09\_01\_10\_002: Fixed bugs related to undefined variables; Added table form styles to _master.blade.php
+cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Fixed bugs related to undefined variables; Added table form styles to _master.blade.php"; git push github master

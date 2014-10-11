@@ -53,12 +53,12 @@ Random text to fill your designs
             <td class="form_entry"><input type="text" name="paragraph_count" value="<?php echo ($paragraphCount ? $paragraphCount : $defaultParagraphs); ?>"></td>
             <td class="form_inst">Max paragraphs: <?=$maxParagraphs;?></td>
         </tr>
+        <tr>
+            <td class="form_label"></td>
+            <td class="form_entry"><button type="submit">Create text</button></td>
+            <td class="form_inst"></td>
+        </tr>
     </table>
-    <tr>
-        <td class="form_label"></td>
-        <td class="form_entry"><button type="submit">Create text</button></td>
-        <td class="form_inst"></td>
-    </tr>
 </form>
 </div>
 
