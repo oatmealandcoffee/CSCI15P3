@@ -119,8 +119,7 @@ Random passwords to lock down your site
     }
 
     if ( $includeSpecial ) {
-        global $specialCharList;
-        echo $specialCharList;
+
         $rc = rand( 0, count( $specialCharList ) - 1 );
         array_push( $passwordBuffer, $specialCharList[$rc] );
     }
