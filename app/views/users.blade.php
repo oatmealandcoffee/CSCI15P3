@@ -97,12 +97,12 @@ Generate users to show off user interactions
     $faker = Faker\Factory::create();
     for ( $u = 0 ; $u < $usersCount ; $u++ ) {
 
-        $name = ( $nameSelected ? $faker->name() : '');
-        $address = ( $addressSelected ? $faker->address() : '');
-        $email = ( $emailSelected ? $faker->email() : '');
-        $text = ( $textSelected ? $faker->text() : '');
+        $userInfo = array();
 
-        $userInfo = array( $name , $address, $email , $text );
+        if ( $nameSelected ) { array_push( $userInfo, $faker->name() ); }
+        if ( $addressSelected ) { array_push( $userInfo, $faker->address() ); }
+        if ( $emailSelected ) { array_push( $userInfo, $faker->email() ); }
+        if ( $textSelected ) { array_push( $userInfo, $faker->text() ); }
 
         $user = implode('<br>', $userInfo);
 

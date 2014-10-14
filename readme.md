@@ -90,6 +90,7 @@ Extra Features include:
 * 14\_10\_09\_01\_09\_000: Added LoremIpsum text generation to text page
 * 14\_10\_09\_01\_10\_000: Added Faker
 * 14\_10\_09\_01\_10\_001: Updated text page to set a default paragraph count; added user form value capture and validation
-* 14\_11\_09\_01\_10\_002: Fixed bugs related to undefined variables; Added table form styles to _master.blade.php
-* 14\_11\_09\_01\_10\_003: Added basic user generation
-cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Added basic user generation"; git push github master
+* 14\_10\_09\_01\_10\_002: Fixed bugs related to undefined variables; Added table form styles to _master.blade.php
+* 14\_10\_09\_01\_10\_003: Added basic user generation
+* 14\_10\_14\_01\_14\_000: Started password generation page; Updated formatting of users results
+cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Started password generation page; Updated formatting of users results"; git push github master
