@@ -97,5 +97,6 @@ Extra Features include:
 * 14\_10\_14\_01\_11\_001: Added WordController holding source lists and retrieval functions
 * 14\_10\_15\_01\_11\_001: Updated WordController to be a class; Updated composer.json to autoload the WordController class
 * 14\_10\_15\_01\_11\_002: Updated passwords.blade.php to get random special character
+* 14\_10\_15\_01\_11\_003: Updated style in _master.blade.php to better handle long passwords; minor UI tweaks in passwords.blade.php
 
-cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Updated passwords.blade.php to get random special character"; git push github master
+cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Updated style in _master.blade.php to better handle long passwords; minor UI tweaks in passwords.blade.php"; git push github master

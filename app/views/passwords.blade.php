@@ -100,6 +100,8 @@ Random passwords to lock down your site
 </div>
 
 <div class="well">
+	<h2>Password</h2>
+	<div class="password">
     <?php
 
     /* build the password */
@@ -150,6 +152,7 @@ Random passwords to lock down your site
     }
 
     ?>
+    </div>
 </div>
 
 @stop

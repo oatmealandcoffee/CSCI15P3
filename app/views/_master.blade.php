@@ -41,6 +41,14 @@
             text-align: left;
             padding: 5px;
         }
+
+        .password
+        {
+            color: #A5351C;
+            font-size: 300%;
+            font-family: monospace;
+            word-wrap: break-word;
+        }
     </style>
 </head>
 
