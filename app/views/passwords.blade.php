@@ -105,10 +105,11 @@ Random passwords to lock down your site
     /* build the password */
     $passwordBuffer = array();
 
+    $wc = new WordController();
+
     for ( $word = 0 ; $word < $wordCount ; $word++ ) {
-        global $wordlist;
-        $idx = rand( 0, count( $wordlist ) - 1 );
-        array_push( $passwordBuffer, $wordlist[$idx] );
+        $w = $wc->getRandomWord();
+        array_push( $passwordBuffer, $w );
     }
 
     /* handle the special cases */
@@ -119,9 +120,8 @@ Random passwords to lock down your site
     }
 
     if ( $includeSpecial ) {
-
-        $rc = rand( 0, count( $specialCharList ) - 1 );
-        array_push( $passwordBuffer, $specialCharList[$rc] );
+        $c = "@";
+        array_push( $passwordBuffer, $c );
     }
 
     if ( $uppercaseFirst ) {

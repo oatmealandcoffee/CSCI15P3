@@ -50,19 +50,20 @@ Extra Features include:
 		X Form, use GET
 			X paragraph count 1-10
 		X https://packagist.org/packages/badcow/lorem-ipsum
-	> Random User Generator
+	X Random User Generator
 		X Create default path
         X Create blade template
-		* Form, use GET
-			* $faker->name
-			* $faker->address
-			* $faker->email
-			* $faker->text
-		* https://packagist.org/packages/fzaninotto/faker
+		X Form, use GET
+			X $faker->name
+			X $faker->address
+			X $faker->email
+			X $faker->text
+		X https://packagist.org/packages/fzaninotto/faker
 	> XKCD Password Generator
 		X Create default path
         X Create blade template
-		* Form, use GET
+		X Form, use GET
+		* Add word and special character selection
 	* All pages
 		* Input validation
 	X Update design to be DRY (esp. NavBar)
@@ -94,4 +95,6 @@ Extra Features include:
 * 14\_10\_09\_01\_10\_003: Added basic user generation
 * 14\_10\_14\_01\_11\_000: Started password generation page; Updated formatting of users results
 * 14\_10\_14\_01\_11\_001: Added WordController holding source lists and retrieval functions
-cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Added WordController holding source lists and retrieval functions"; git push github master
+* 14\_10\_15\_01\_11\_001: Updated WordController to be a class; Updated composer.json to autoload the WordController class
+
+cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Updated WordController to be a class; Updated composer.json to autoload the WordController class"; git push github master
