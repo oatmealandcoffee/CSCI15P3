@@ -94,19 +94,30 @@ Generate users to show off user interactions
 <div class="well">
 
     <?php
+
     $faker = Faker\Factory::create();
-    for ( $u = 0 ; $u < $usersCount ; $u++ ) {
 
-        $userInfo = array();
+		if ( !$nameSelected && !$addressSelected && !$emailSelected && !$textSelected ) {
+        	echo '<p>Select parameters above</p>';
+        } else {
 
-        if ( $nameSelected ) { array_push( $userInfo, $faker->name() ); }
-        if ( $addressSelected ) { array_push( $userInfo, $faker->address() ); }
-        if ( $emailSelected ) { array_push( $userInfo, $faker->email() ); }
-        if ( $textSelected ) { array_push( $userInfo, $faker->text() ); }
+            for ( $u = 0 ; $u < $usersCount ; $u++ ) {
 
-        $user = implode('<br>', $userInfo);
+                $userInfo = array();
 
-        echo '<p>'.$user.'</p>';
+        		if ( $nameSelected ) { array_push( $userInfo, $faker->name() ); }
+        		if ( $addressSelected ) { array_push( $userInfo, $faker->address() ); }
+        		if ( $emailSelected ) { array_push( $userInfo, $faker->email() ); }
+        		if ( $textSelected ) { array_push( $userInfo, $faker->text() ); }
+
+        		$user = implode('<br>', $userInfo);
+
+                echo '<p>'.$user.'</p>';
+		}
+        // output a default value if nothing is selected, else output user selections
+
+
+
 
     }
 

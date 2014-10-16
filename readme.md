@@ -14,7 +14,10 @@ I will do an in-person demo
 # Test Requirements and Details
 <!-- Any details the instructor or TA needs to know, for example, test credentials. -->
 Extra Features include:
-*
+* Used Bootstrap in the master template to improve UI
+* Added options to user generation
+* Added password generator
+* Moved the word list and random value functions to a custom "WordController" class. This was done because the source word list was far too long to include in the blade file to be useful. Called WordController due to a failed attempt to create a Laravel controller, when all I needed was just to integrate third-party PHP code.
 
 # Dependencies and Citations
 <!--A list of any plugins, libraries, packages or outside code used in the project. See Student Responsibilities for more details on avoiding code plagiarism.-->
@@ -36,8 +39,10 @@ Extra Features include:
 
 ## Roadmap
 
-	* Tweaks
-		* Fix table layout for settings
+	> Tweaks
+		> Create a default user in absence of settings
+		* Move master-embedded styles to external CSS in /public/css (href="/css/styles.css")
+		X Fix table layout for settings
 	X Integrate Bootstrap into default page
 	X Landing page
 		X Create default path
@@ -59,15 +64,15 @@ Extra Features include:
 			X $faker->email
 			X $faker->text
 		X https://packagist.org/packages/fzaninotto/faker
-	> XKCD Password Generator
+	X XKCD Password Generator
 		X Create default path
         X Create blade template
 		X Form, use GET
-		* Add word and special character selection
-	* All pages
-		* Input validation
+		X Add word and special character selection
+	X All pages
+		X Input validation
 	X Update design to be DRY (esp. NavBar)
-	* Packages to install
+	X Packages to install
 		X "badcow/lorem-ipsum": "dev-master",
     	- "nubs/random-name-generator": "dev-master", // deprecated, using Faker instead
     	* "fzaninotto/company-name-generator": "dev-master"
@@ -98,5 +103,6 @@ Extra Features include:
 * 14\_10\_15\_01\_11\_001: Updated WordController to be a class; Updated composer.json to autoload the WordController class
 * 14\_10\_15\_01\_11\_002: Updated passwords.blade.php to get random special character
 * 14\_10\_15\_01\_11\_003: Updated style in _master.blade.php to better handle long passwords; minor UI tweaks in passwords.blade.php
+* 14\_10\_15\_01\_11\_004: Updated users to give a default when no options are selected
 
-cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Updated style in _master.blade.php to better handle long passwords; minor UI tweaks in passwords.blade.php"; git push github master
+cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Updated users to give a default when no options are selected"; git push github master
