@@ -120,7 +120,7 @@ Random passwords to lock down your site
     }
 
     if ( $includeSpecial ) {
-        $c = "@";
+        $c = $wc->getRandomSpecChar();
         array_push( $passwordBuffer, $c );
     }
 
