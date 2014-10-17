@@ -3,14 +3,6 @@
 @section('require')
 <?php
 
-/* global values */
-$defaultWords = 4;
-
-$maxWords = 10;
-$minNumber = 1000;
-$maxNumber = 9999;
-$defaultDelimiter = ' ';
-
 /* capture the form values */
 
 $wordCount = Input::get('word_count');
@@ -21,19 +13,10 @@ $userDelimiter = htmlentities(Input::get('delimiter'));
 $camelCase = Input::get('camelCase');
 
 /* validate form values */
-if ( $wordCount ) {
-    if ( is_numeric( $wordCount ) == false ) {
-        $wordCount = $defaultWords;
-    } else {
-        if ( $wordCount < 1 ) {
-            $wordCount = $defaultWords;
-        } elseif ( $wordCount > $maxWords ) {
-            $wordCount = $maxWords;
-        }
-    }
-} else {
-    $wordCount = $defaultWords;
-}
+
+$pg = new PasswordGenerator();
+
+$wordCount = $pg->sanitizeWordCount( $wordCount );
 
 ?>
 @stop
@@ -61,13 +44,13 @@ Random passwords to lock down your site
         <table>
             <tr>
                 <td class="form_label">Word Count</td>
-                <td class="form_entry"><input type="text" name="word_count" value="<?php echo ($wordCount ? $wordCount : $defaultWords); ?>"></td>
-                <td class="form_inst">Max words: <?=$maxWords;?></td>
+                <td class="form_entry"><input type="text" name="word_count" value="<?php echo ($wordCount ? $wordCount : $pg->getDefaultWords()); ?>"></td>
+                <td class="form_inst">Max words: <?=$pg->getMaxWords();?></td>
             </tr>
             <tr>
                 <td class="form_label">Include Number</td>
                 <td class="form_entry"><input type="checkbox" name="include_number" <?php echo ($includeNumber ? 'checked' : ''); ?>></td>
-                <td class="form_inst">Randomly selected between <?=$minNumber;?>–<?=$maxNumber;?>.</td>
+                <td class="form_inst">Randomly selected between <?=$pg->getMinNumber();?>–<?=$pg->getMaxNumber();?>.</td>
             </tr>
             <tr>
                 <td class="form_label">Include Special Character</td>
@@ -102,56 +85,7 @@ Random passwords to lock down your site
 <div class="well">
 	<h2>Password</h2>
 	<div class="password">
-    <?php
-
-    /* build the password */
-    $passwordBuffer = array();
-
-    $wc = new WordController();
-
-    for ( $word = 0 ; $word < $wordCount ; $word++ ) {
-        $w = $wc->getRandomWord();
-        array_push( $passwordBuffer, $w );
-    }
-
-    /* handle the special cases */
-
-    if ( $includeNumber ) {
-        $rn = rand( $minNumber, $maxNumber );
-        array_push( $passwordBuffer, $rn );
-    }
-
-    if ( $includeSpecial ) {
-        $c = $wc->getRandomSpecChar();
-        array_push( $passwordBuffer, $c );
-    }
-
-    if ( $uppercaseFirst ) {
-        $passwordBuffer[0] = ucfirst( $passwordBuffer[0] );
-    }
-
-    /* handle delimiters immediately prior to output */
-
-    if ( $camelCase ) {
-
-        $lastComponent = count( $passwordBuffer );
-        for ( $c = 0 ; $c < $lastComponent ; $c++ ) {
-            $passwordBuffer[$c] = strtolower( $passwordBuffer[$c] );
-            if ( $c > 0 ) {
-                $passwordBuffer[$c] = ucfirst( $passwordBuffer[$c] );
-            }
-        }
-        $generatedPassword = join( '', $passwordBuffer );
-
-    } else {
-        if ( $userDelimiter ) {
-            echo join( $userDelimiter, $passwordBuffer );
-        } else {
-            echo join( $defaultDelimiter, $passwordBuffer );
-        }
-    }
-
-    ?>
+    <?=$pg->generatePassword( $wordCount, $includeNumber, $includeSpecial, $uppercaseFirst, $userDelimiter, $camelCase );?>
     </div>
 </div>
 

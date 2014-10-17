@@ -16,8 +16,9 @@ I will do an in-person demo
 Extra Features include:
 * Used Bootstrap in the master template to improve UI
 * Added options to user generation
-* Added password generator
-* Moved the word list and random value functions to a custom "WordController" class. This was done because the source word list was far too long to include in the blade file to be useful. Called WordController due to a failed attempt to create a Laravel controller, when all I needed was just to integrate third-party PHP code.
+* Added password generator project code
+* Moved the word list and random value functions to a custom "WordController" class
+* Moved password generation logic out of the view into a custom "PasswordController" class
 
 # Dependencies and Citations
 <!--A list of any plugins, libraries, packages or outside code used in the project. See Student Responsibilities for more details on avoiding code plagiarism.-->
@@ -104,5 +105,6 @@ Extra Features include:
 * 14\_10\_15\_01\_11\_002: Updated passwords.blade.php to get random special character
 * 14\_10\_15\_01\_11\_003: Updated style in _master.blade.php to better handle long passwords; minor UI tweaks in passwords.blade.php
 * 14\_10\_15\_01\_11\_004: Updated users to give a default when no options are selected
+* 14\_10\_17\_01\_12\_000: Added PasswordGenerator class; Updated passwords.blade.php to use PasswordGenerator; Minor UI tweaks in users.blade.php
 
-cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Updated users to give a default when no options are selected"; git push github master
+cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Added PasswordGenerator class; Updated passwords.blade.php to use PasswordGenerator; Minor UI tweaks in users.blade.php"; git push github master

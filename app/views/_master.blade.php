@@ -49,6 +49,13 @@
             font-family: monospace;
             word-wrap: break-word;
         }
+
+        .noOptions
+        {
+         	color: #A5351C;
+         	font-style: italic;
+         	word-wrap: break-word;
+        }
     </style>
 </head>
 

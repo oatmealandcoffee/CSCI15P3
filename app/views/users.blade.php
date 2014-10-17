@@ -98,7 +98,7 @@ Generate users to show off user interactions
     $faker = Faker\Factory::create();
 
 		if ( !$nameSelected && !$addressSelected && !$emailSelected && !$textSelected ) {
-        	echo '<p>Select parameters above</p>';
+        	echo '<p class="noOptions">Select options above</p>';
         } else {
 
             for ( $u = 0 ; $u < $usersCount ; $u++ ) {
