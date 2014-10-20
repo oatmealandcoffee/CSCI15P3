@@ -30,6 +30,7 @@ Random text to fill your designs
 
 @section('body')
 <div class="well">
+<h2>Settings</h2>
 {{ Form::open(array( 'url'=> '/text', 'method' => 'GET')); }}
 	<table>
 		<tr>
@@ -47,6 +48,7 @@ Random text to fill your designs
 </div>
 
 <div class="well">
+<h2>Text</h2>
 	{{  $lg->generateLorem( $paragraphCount ); }}
 </div>
 @stop

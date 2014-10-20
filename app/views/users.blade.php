@@ -36,42 +36,44 @@ Generate users to show off user interactions
 
 @section('body')
 <div class="well">
+<h2>Settings</h2>
     <form action="users" method="GET">
         <table>
             <tr>
                 <td class="form_label">User Count</td>
-                <td class="form_entry"><input type="text" name="user_count" value="<?php echo ( $usersCount ? $usersCount : $ug->getDefaultUsers() ); ?>"></td>
-                <td class="form_inst">Max Users: <?=$ug->getMaxUsers();?></td>
+                <td class="form_entry">{{ Form::text('user_count', ($usersCount ? $usersCount : $ug->getDefaultUsers() ) ); }}</td>
+                <td class="form_inst">{{  $ug->getMaxUsers(); }}</td>
             </tr>
             <tr>
                 <td class="form_label">Include Name</td>
-                <td class="form_entry"><input type="checkbox" name="include_name" <?php echo ($nameSelected ? 'checked' : ''); ?>></td>
+                <td class="form_entry">{{ Form::checkbox('include_name', 1, ($nameSelected ? 'checked' : '') ) }}</td>
                 <td class="form_inst"></td>
             </tr>
             <tr>
                 <td class="form_label">Include Address</td>
-                <td class="form_entry"><input type="checkbox" name="include_address" <?php echo ($addressSelected ? 'checked' : ''); ?>></td>
+               	<td class="form_entry">{{ Form::checkbox('include_address', 1, ($addressSelected ? 'checked' : '') ) }}</td>
                 <td class="form_inst"></td>
             </tr>
             <tr>
                 <td class="form_label">Include Email</td>
-                <td class="form_entry"><input type="checkbox" name="include_email" <?php echo ($emailSelected ? 'checked' : ''); ?>></td>
+                <td class="form_entry">{{ Form::checkbox('include_email', 1, ($emailSelected ? 'checked' : '') ) }}</td>
                 <td class="form_inst"></td>
             </tr>
             <tr>
                 <td class="form_label">Include Blurb</td>
-                <td class="form_entry"><input type="checkbox" name="include_text" <?php echo ($textSelected ? 'checked' : ''); ?>></td>
+                <td class="form_entry">{{ Form::checkbox('include_text', 1, ($textSelected ? 'checked' : '') ) }}</td>
                 <td class="form_inst"></td>
             </tr>
             <tr>
                 <td class="form_label"></td>
-                <td class="form_entry"><button type="submit">Create users</button></td>
+                <td class="form_entry">{{ Form::submit('Create Users'); }}</td>
                 <td class="form_inst"></td>
             </tr>
         </table>
     </form>
 </div>
 <div class="well">
+<h2>Users</h2>
 	{{ $ug->generateUsers( $usersCount, $nameSelected, $addressSelected, $emailSelected, $textSelected );  }}
 </div>
 @stop
