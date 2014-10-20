@@ -42,9 +42,10 @@ Extra Features include:
 
 	> Tweaks
 		* Migrate user generation code to custom controller
-		* Migrate text generation code to custom controller
-		* Update all HTML forms to Blade forms
+		* Update user HTML form to Laravel
+		* add JSON option for user generation output
 		* Move master-embedded styles to external CSS in /public/css (href="/css/styles.css")
+		X Migrate text generation code to custom controller
 		- Create a default user in absence of settings // shows a user-friendly error instead
 		X Fix table layout for settings
 	X Integrate Bootstrap into default page
