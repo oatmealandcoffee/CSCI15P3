@@ -2,29 +2,13 @@
 
 @section('require')
 <?php
-/* global variables */
-$minParagraphs = 1;
-$maxParagraphs = 10;
-$defaultParagraphs = $minParagraphs;
 
 /* capture the form values */
-$paragraphCount = Input::get('paragraph_count');
 
-if ( $paragraphCount ) {
-    if ( !is_numeric( $paragraphCount ) ) {
-        $paragraphCount = $minParagraphs;
-    }
+$lg = new LoremGenerator();
 
-    if ( $paragraphCount < $minParagraphs ) {
-        $paragraphCount = $minParagraphs;
-    }
+$paragraphCount = $lg->sanitizeParagraphCount( Input::get('paragraph_count') );
 
-    if ( $paragraphCount > $maxParagraphs ) {
-        $paragraphCount = $maxParagraphs;
-    }
-} else {
-    $paragraphCount = $defaultParagraphs;
-}
 ?>
 @stop
 
@@ -50,8 +34,8 @@ Random text to fill your designs
 	<table>
 		<tr>
 			<td class="form_label">Paragraph Count</td>
-			<td class="form_entry">{{ Form::text('paragraph_count', ($paragraphCount ? $paragraphCount : $defaultParagraphs) ); }}</td>
-			<td class="form_inst">{{ 'Max paragraphs: '.$maxParagraphs }}</td>
+			<td class="form_entry">{{ Form::text('paragraph_count', ($paragraphCount ? $paragraphCount : $lg->getDefaultParagraphs() ) ); }}</td>
+			<td class="form_inst">{{ 'Max paragraphs: '.$lg->getMaxParagraphs() }}</td>
 		</tr>
 		<tr>
 			<td class="form_label"></td>
@@ -63,10 +47,6 @@ Random text to fill your designs
 </div>
 
 <div class="well">
-    <?php
-    $generator = new Badcow\LoremIpsum\Generator();
-    $paragraphs = $generator->getParagraphs( $paragraphCount );
-    echo implode('<p>', $paragraphs);
-    ?>
+	{{  $lg->generateLorem( $paragraphCount ); }}
 </div>
 @stop

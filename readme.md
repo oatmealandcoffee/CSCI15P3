@@ -111,5 +111,6 @@ Extra Features include:
 * 14\_10\_17\_01\_12\_000: Added PasswordGenerator class; Updated passwords.blade.php to use PasswordGenerator; Minor UI tweaks in users.blade.php
 * Begin conforming rest of site to pure Laravel and aligning to passwords architecture
 * 14\_10\_20\_02\_00\_000: Updated text form to Laravel
+* 14\_10\_20\_02\_01\_000: Added LoremGenerator class for all logic; Updated text form to use LoremGenerator class
 
-cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Updated text form to Laravel"; git push github master
+cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Added LoremGenerator class for all logic; Updated text form to use LoremGenerator class"; git push github master
