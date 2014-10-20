@@ -41,8 +41,11 @@ Extra Features include:
 ## Roadmap
 
 	> Tweaks
-		> Create a default user in absence of settings
+		* Migrate user generation code to custom controller
+		* Migrate text generation code to custom controller
+		* Update all HTML forms to Blade forms
 		* Move master-embedded styles to external CSS in /public/css (href="/css/styles.css")
+		- Create a default user in absence of settings // shows a user-friendly error instead
 		X Fix table layout for settings
 	X Integrate Bootstrap into default page
 	X Landing page
@@ -106,5 +109,7 @@ Extra Features include:
 * 14\_10\_15\_01\_11\_003: Updated style in _master.blade.php to better handle long passwords; minor UI tweaks in passwords.blade.php
 * 14\_10\_15\_01\_11\_004: Updated users to give a default when no options are selected
 * 14\_10\_17\_01\_12\_000: Added PasswordGenerator class; Updated passwords.blade.php to use PasswordGenerator; Minor UI tweaks in users.blade.php
+* Begin conforming rest of site to pure Laravel and aligning to passwords architecture
+* 14\_10\_20\_02\_00\_000: Updated text form to Laravel
 
-cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Added PasswordGenerator class; Updated passwords.blade.php to use PasswordGenerator; Minor UI tweaks in users.blade.php"; git push github master
+cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Updated text form to Laravel"; git push github master

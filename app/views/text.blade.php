@@ -46,20 +46,20 @@ Random text to fill your designs
 
 @section('body')
 <div class="well">
-<form action="text" method="GET">
-    <table>
-        <tr>
-            <td class="form_label">Paragraph Count</td>
-            <td class="form_entry"><input type="text" name="paragraph_count" value="<?php echo ($paragraphCount ? $paragraphCount : $defaultParagraphs); ?>"></td>
-            <td class="form_inst">Max paragraphs: <?=$maxParagraphs;?></td>
-        </tr>
-        <tr>
-            <td class="form_label"></td>
-            <td class="form_entry"><button type="submit">Create text</button></td>
-            <td class="form_inst"></td>
-        </tr>
-    </table>
-</form>
+{{ Form::open(array( 'url'=> '/text', 'method' => 'GET')); }}
+	<table>
+		<tr>
+			<td class="form_label">Paragraph Count</td>
+			<td class="form_entry">{{ Form::text('paragraph_count', ($paragraphCount ? $paragraphCount : $defaultParagraphs) ); }}</td>
+			<td class="form_inst">{{ 'Max paragraphs: '.$maxParagraphs }}</td>
+		</tr>
+		<tr>
+			<td class="form_label"></td>
+			<td class="form_entry">{{ Form::submit('Create Text'); }}</td>
+			<td class="form_inst"></td>
+		</tr>
+	</table>
+{{ Form::close(); }}
 </div>
 
 <div class="well">
