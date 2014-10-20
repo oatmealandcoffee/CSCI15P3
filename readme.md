@@ -41,10 +41,10 @@ Extra Features include:
 ## Roadmap
 
 	> Tweaks
-		* Migrate user generation code to custom controller
-		* Update user HTML form to Laravel
-		* add JSON option for user generation output
+		X Migrate user generation code to custom controller
+		> Update user HTML form to Laravel
 		* Move master-embedded styles to external CSS in /public/css (href="/css/styles.css")
+		? add JSON option for user generation output
 		X Migrate text generation code to custom controller
 		- Create a default user in absence of settings // shows a user-friendly error instead
 		X Fix table layout for settings
@@ -113,5 +113,6 @@ Extra Features include:
 * Begin conforming rest of site to pure Laravel and aligning to passwords architecture
 * 14\_10\_20\_02\_00\_000: Updated text form to Laravel
 * 14\_10\_20\_02\_01\_000: Added LoremGenerator class for all logic; Updated text form to use LoremGenerator class
+* 14\_10\_20\_02\_02\_000: Added UserGenerator class for all logic; Updated user form to use UserGenerator class
 
-cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Added LoremGenerator class for all logic; Updated text form to use LoremGenerator class"; git push github master
+cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Added UserGenerator class for all logic; Updated user form to use UserGenerator class"; git push github master

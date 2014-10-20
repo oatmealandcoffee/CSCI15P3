@@ -2,16 +2,8 @@
 
 @section('require')
 <?php
-
-/* Global Variables */
-
-$minUsers = 1;
-$maxUsers = 10;
-$defaultUsers = $minUsers;
-
 /* capture the form values */
 
-$usersCount = Input::get('user_count');
 $nameSelected = Input::get('include_name');
 $addressSelected = Input::get('include_address');
 $emailSelected = Input::get('include_email');
@@ -19,21 +11,9 @@ $textSelected = Input::get('include_text');
 
 /* Validate user input */
 
-if ( $usersCount ) {
-    if ( !is_numeric( $usersCount ) ) {
-        $usersCount = $minUsers;
-    }
+$ug = new UserGenerator();
 
-    if ( $usersCount < $minUsers ) {
-        $usersCount = $minUsers;
-    }
-
-    if ( $usersCount > $maxUsers ) {
-        $usersCount = $maxUsers;
-    }
-} else {
-    $usersCount = $defaultUsers;
-}
+$usersCount = $ug->sanitizeUsersCount( Input::get('user_count') );
 
 ?>
 @stop
@@ -60,8 +40,8 @@ Generate users to show off user interactions
         <table>
             <tr>
                 <td class="form_label">User Count</td>
-                <td class="form_entry"><input type="text" name="user_count" value="<?php echo ($usersCount ? $usersCount : $defaultUsers); ?>"></td>
-                <td class="form_inst">Max Users: <?=$maxUsers;?></td>
+                <td class="form_entry"><input type="text" name="user_count" value="<?php echo ( $usersCount ? $usersCount : $ug->getDefaultUsers() ); ?>"></td>
+                <td class="form_inst">Max Users: <?=$ug->getMaxUsers();?></td>
             </tr>
             <tr>
                 <td class="form_label">Include Name</td>
@@ -92,36 +72,6 @@ Generate users to show off user interactions
     </form>
 </div>
 <div class="well">
-
-    <?php
-
-    $faker = Faker\Factory::create();
-
-		if ( !$nameSelected && !$addressSelected && !$emailSelected && !$textSelected ) {
-        	echo '<p class="noOptions">Select options above</p>';
-        } else {
-
-            for ( $u = 0 ; $u < $usersCount ; $u++ ) {
-
-                $userInfo = array();
-
-        		if ( $nameSelected ) { array_push( $userInfo, $faker->name() ); }
-        		if ( $addressSelected ) { array_push( $userInfo, $faker->address() ); }
-        		if ( $emailSelected ) { array_push( $userInfo, $faker->email() ); }
-        		if ( $textSelected ) { array_push( $userInfo, $faker->text() ); }
-
-        		$user = implode('<br>', $userInfo);
-
-                echo '<p>'.$user.'</p>';
-		}
-        // output a default value if nothing is selected, else output user selections
-
-
-
-
-    }
-
-    ?>
-
+	{{ $ug->generateUsers( $usersCount, $nameSelected, $addressSelected, $emailSelected, $textSelected );  }}
 </div>
 @stop
