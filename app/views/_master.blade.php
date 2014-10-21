@@ -22,41 +22,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-    <style>
-        .form_label
-        {
-            text-align: right;
-            padding: 5px;
-            font-weight: bold;
-        }
-
-        .form_entry
-        {
-            text-align: left;
-            padding: 5px;
-        }
-
-        .form_inst
-        {
-            text-align: left;
-            padding: 5px;
-        }
-
-        .password
-        {
-            color: #A5351C;
-            font-size: 300%;
-            font-family: monospace;
-            word-wrap: break-word;
-        }
-
-        .noOptions
-        {
-         	color: #A5351C;
-         	font-style: italic;
-         	word-wrap: break-word;
-        }
-    </style>
+	<link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>

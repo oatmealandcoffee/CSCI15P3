@@ -40,14 +40,15 @@ Extra Features include:
 	* GET 
 * http://p3.regan15.pw/passwords ; password generator
 	* GET 
+* http://p3.regan15.pw/{anything else ; error_default
 
 ## Roadmap
 
 	> Tweaks
 		X Migrate user generation code to custom controller
 		X Update user HTML form to Laravel
-		* Move master-embedded styles to external CSS in /public/css (href="/css/styles.css")
-		? add JSON option for user generation output
+		X Move master-embedded styles to external CSS in /public/css (href="/css/styles.css")
+		- add JSON option for user generation output // cancelled due to time constraints
 		X Migrate text generation code to custom controller
 		- Create a default user in absence of settings // shows a user-friendly error instead
 		X Fix table layout for settings
@@ -83,7 +84,7 @@ Extra Features include:
 	X Packages to install
 		X "badcow/lorem-ipsum": "dev-master",
     	- "nubs/random-name-generator": "dev-master", // deprecated, using Faker instead
-    	* "fzaninotto/company-name-generator": "dev-master"
+    	- "fzaninotto/company-name-generator": "dev-master" // deprecated, using Faker instead
 
 ## Bugs
 	X [0107001] URIs are not resolving on the production server
@@ -119,5 +120,6 @@ Extra Features include:
 * 14\_10\_20\_02\_02\_000: Added UserGenerator class for all logic; Updated user form to use UserGenerator class
 * 14\_10\_20\_02\_03\_000: Updated users form to Laravel
 * 14\_10\_20\_02\_04\_000: Added error handling route to redirect users
+* 14\_10\_20\_02\_05\_000: Moved styles out of _master.blade and into /public/css/styles.css
 
-cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Updated users form to Laravel"; git push github master
+cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Moved styles out of _master.blade and into /public/css/styles.css"; git push github master
