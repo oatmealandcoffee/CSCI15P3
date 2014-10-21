@@ -29,3 +29,7 @@ Route::get('/passwords', function()
 {
     return View::make('passwords');
 });
+
+App::error(function($exception, $code) {
+    return View::make('error_default');
+});

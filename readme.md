@@ -21,6 +21,7 @@ Extra Features include:
 	* Text -> LoremGenerator
 	* Users -> UsersGenerator
 	* Passwords -> PasswordGenerator, WordController (source list and access)
+* Added a general error route so that users can easily go to a an existing page as opposed to seeing all the Laravel cruft
 
 # Dependencies and Citations
 <!--A list of any plugins, libraries, packages or outside code used in the project. See Student Responsibilities for more details on avoiding code plagiarism.-->
@@ -117,5 +118,6 @@ Extra Features include:
 * 14\_10\_20\_02\_01\_000: Added LoremGenerator class for all logic; Updated text form to use LoremGenerator class
 * 14\_10\_20\_02\_02\_000: Added UserGenerator class for all logic; Updated user form to use UserGenerator class
 * 14\_10\_20\_02\_03\_000: Updated users form to Laravel
+* 14\_10\_20\_02\_04\_000: Added error handling route to redirect users
 
 cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Updated users form to Laravel"; git push github master
