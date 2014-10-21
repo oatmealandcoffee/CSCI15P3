@@ -5,7 +5,7 @@
 [http://p3.regan15.pw](http://p3.regan15.pw)
 
 # Description
-<!-- 2-3+ sentences -->
+Developer's Bet Friend is a utility site that assists in the creation of filler data for testing designs and websites. Utilities include creation of dummy text, fake users, and random passwords.
 
 # Demo information
 <!-- If you attend your section to do an in-person demo, make a note of this. If you opt to do the Jing screencast demo, include the link here .-->
@@ -15,10 +15,12 @@ I will do an in-person demo
 <!-- Any details the instructor or TA needs to know, for example, test credentials. -->
 Extra Features include:
 * Used Bootstrap in the master template to improve UI
-* Added options to user generation
+* Added options for user generation
 * Added password generator project code
-* Moved the word list and random value functions to a custom "WordController" class
-* Moved password generation logic out of the view into a custom "PasswordController" class
+* Moved logic for all of the pages out of the view into custom controller classes. These classes manage the sanitizing of user content and content generation.
+	* Text -> LoremGenerator
+	* Users -> UsersGenerator
+	* Passwords -> PasswordGenerator, WordController (source list and access)
 
 # Dependencies and Citations
 <!--A list of any plugins, libraries, packages or outside code used in the project. See Student Responsibilities for more details on avoiding code plagiarism.-->
@@ -42,7 +44,7 @@ Extra Features include:
 
 	> Tweaks
 		X Migrate user generation code to custom controller
-		> Update user HTML form to Laravel
+		X Update user HTML form to Laravel
 		* Move master-embedded styles to external CSS in /public/css (href="/css/styles.css")
 		? add JSON option for user generation output
 		X Migrate text generation code to custom controller
