@@ -53,7 +53,7 @@ class UserGenerator {
             return '<p class="noOptions">Select options above</p>';
         } else {
 
-            $users = array();
+            $output = '';
 
             for ( $u = 0 ; $u < $usersCount ; $u++ ) {
 
@@ -66,10 +66,10 @@ class UserGenerator {
 
                 $user = implode('<br>', $userInfo);
 
-                array_push( $users, $user );
+                $output = $output.'<p>'.$user.'</p>';
             }
 
-            return implode('<p>', $users );
+            return $output;
         }
     }
 

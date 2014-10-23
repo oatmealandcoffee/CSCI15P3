@@ -121,5 +121,6 @@ Extra Features include:
 * 14\_10\_20\_02\_03\_000: Updated users form to Laravel
 * 14\_10\_20\_02\_04\_000: Added error handling route to redirect users
 * 14\_10\_20\_02\_05\_000: Moved styles out of _master.blade and into /public/css/styles.css
+* 14\_10\_23\_02\_05\_001: Fixed minor formatting bugs in lorem and users output; minor interface tweak in users
 
-cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Moved styles out of _master.blade and into /public/css/styles.css"; git push github master
+cd /Applications/MAMP/htdocs/CSCIE15P3; git add --all; git commit -m "Fixed minor formatting bugs in lorem and users output; minor interface tweak in users"; git push github master

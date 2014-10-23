@@ -40,6 +40,12 @@ class LoremGenerator {
     public function generateLorem( $paragraphCount ) {
         $generator = new Badcow\LoremIpsum\Generator();
         $paragraphs = $generator->getParagraphs( $paragraphCount );
-        return implode('<p>', $paragraphs);
+
+        $output = '';
+        foreach ( $paragraphs as $p ) {
+            $output = $output.'<p>'.$p.'</p>';
+        }
+
+        return $output;
     }
 } 

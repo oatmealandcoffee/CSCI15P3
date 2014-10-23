@@ -42,7 +42,7 @@ Generate users to show off user interactions
             <tr>
                 <td class="form_label">User Count</td>
                 <td class="form_entry">{{ Form::text('user_count', ($usersCount ? $usersCount : $ug->getDefaultUsers() ) ); }}</td>
-                <td class="form_inst">{{  $ug->getMaxUsers(); }}</td>
+                <td class="form_inst">Max users: {{ $ug->getMaxUsers(); }}</td>
             </tr>
             <tr>
                 <td class="form_label">Include Name</td>
